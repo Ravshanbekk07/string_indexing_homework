@@ -5,5 +5,13 @@ def main(s):
         s(str): parameter
     Returns:
         int: answer
-    """
-    return
+    """ 
+    dig = 0
+    for i in s.isnumeric():
+        if int(s[i]):
+            dig+=1
+
+    return dig
+
+v = main('32x3z')
+print(v)
